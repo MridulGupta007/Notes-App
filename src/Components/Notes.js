@@ -55,7 +55,7 @@ const Notes = () => {
         pageCount={pageCount}
         previousLabel={<ArrowBackIosOutlinedIcon  color='primary'/>}
         renderOnZeroPageCount={null}
-        containerClassName='self-center flex gap-10'
+        containerClassName='self-center flex gap-10 absolute bottom-0'
       />
         </div>
 
