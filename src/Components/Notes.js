@@ -69,17 +69,3 @@ const Notes = () => {
 
 export default Notes
 
-// const PaginatedItems = ({itemsPerPage}) => {
-//     const [currentitems, setcurrentitems] = useState(null);  
-//     const [pageCount, setPageCount] = useState(0);  
-//     const [elementOffset, setElementOffset] = usestate(0); 
-    
-//     useEffect(() => {    
-//         const endOffset = itemOffset + itemsPerPage;  
-//         console.log(`Loading items from ${itemOffset} to ${endOffset}`);  
-//         setCurrentItems(items.slice(itemOffset, endOffset));  
-//         setPageCount(Math.ceil(items.length / itemsPerPage));  
-//       }, [elementOffset, elements per page]); 
-
-
-// }
