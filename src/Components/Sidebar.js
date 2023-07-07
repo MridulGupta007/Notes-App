@@ -44,16 +44,16 @@ const MobBar = () => {
 
 
 
-        <div className='flex items-center justify-center border-b hover:bg-side-element rounded-xl shadow-md mb-2 gap-10'>
+      <NavLink to='/'><div className='flex items-center justify-center border-b hover:bg-side-element rounded-xl shadow-md mb-2 gap-10'>
           <ChecklistRoundedIcon />
-          <NavLink to='/'><SideElements title='Notes' className='' /></NavLink>
-        </div>
+          <SideElements title='Notes' className='' />
+        </div></NavLink>
 
 
-        <div className='flex items-center justify-center border-b hover:bg-side-element rounded-xl shadow-md gap-10'>
+        <NavLink to='/deleted'><div className='flex items-center justify-center border-b hover:bg-side-element rounded-xl shadow-md gap-10'>
           <FolderDeleteRoundedIcon />
-          <NavLink to='/deleted'><SideElements title='Deleted Notes' className='' /></NavLink>
-        </div>
+          <SideElements title='Deleted Notes' className='' />
+        </div></NavLink>
 
 
 
