@@ -32,7 +32,7 @@ const Header = () => {
                     searchHandler.setDisplay(() => searchHandler.notesCollection.filter(elem => elem.header.toLowerCase().includes(e.target.value.toLowerCase()) || elem.content.toLowerCase().includes(e.target.value.toLowerCase()) || elem.tagline.toLowerCase().includes(e.target.value.toLowerCase())))
                 }} className="bg-[#f5f5f5] px-3 hover:placeholder:translate-y-[-20px] hover:placeholder:translate-x-[8px] hover:placeholder:text-[10px] focus:placeholder:translate-y-[-20px] focus:placeholder:translate-x-[8px] focus:placeholder:text-[10px]  placeholder:duration-300 placeholder:ease-in-out focus:outline-[#087EA4] text-[grey] w-11/12 h-12 rounded-full" />
 
-                <Button onClick={() => searchHandler.setModal(true)} size='small' title="Add Task" variant='text'><AddRoundedIcon /></Button>
+                <Button onClick={() => searchHandler.setModal(true)} size='small' title="Add Task" variant='contained'><AddRoundedIcon /></Button>
 
             </div>
 
