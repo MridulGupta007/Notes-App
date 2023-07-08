@@ -33,12 +33,12 @@ const Notes = () => {
 
     return(
         <>
-        <div className='flex flex-col w-full'>
+        <div className='flex flex-col w-full h-[100vh]'>
         
         {noteGetter.pinnedNotes.length > 0 && <PinnedNotes />}
         
         <span className='font-semibold text-[#27374D] tracking-wider self-center p-4 underline underline-offset-2 decoration-[#023e8a] decoration-4'>Your Notes</span>
-        <div className='flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:px-5'>
+        <div className='flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:px-5 mb-2'>
                     {/* Map Added or Existing Notes, send Object and Index to Card.js*/}
                     
                     {currentItems.map((elem,index) => {
@@ -55,10 +55,10 @@ const Notes = () => {
         pageCount={pageCount}
         previousLabel={<ArrowBackIosOutlinedIcon  color='primary'/>}
         renderOnZeroPageCount={null}
-        containerClassName='self-center flex gap-10 absolute bottom-0'
+        containerClassName='self-center flex gap-10'
       />
         </div>
-
+        
     
 
 
